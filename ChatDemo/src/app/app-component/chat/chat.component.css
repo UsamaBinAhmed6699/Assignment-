@@ -1,0 +1,140 @@
+
+.chat-content{
+    max-width: 30%;
+    margin-left: 25%;
+}
+
+.rcorners1 {
+    border-radius: 25px;
+    background: #F7F7F7 ;
+    padding: 20px;
+    width: 350px;
+    height: 100px;
+  }
+  .isSenderMe{
+      align-items:"right" ;
+  }
+
+  .messages-header{
+      height: 15%;
+  }
+
+ 
+
+  .clear-float{
+      float: none;
+      clear: both;
+  }
+
+  .seenBy-image img{
+      width: 30px;
+      border-radius: 50%;
+  }
+  .seenBy-image{
+  float: right;
+  margin: 0px 4px;
+  position: relative;
+  left: 200px;
+  }
+
+  
+.messagearea {
+    float: left;
+    width: 100%;
+    /* height: 45px; */
+}
+
+.urgent-message {
+    background-color: #F92B65 !important;
+    border-radius: 28px;
+    position: relative;
+    top: 25px;
+    padding: 1px 1px 1px 10px;
+    color: #ffff;
+    margin-left: 55px;
+    width: 30%;
+    background-image: url(/assets/Images/clock.png);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 18px;
+}
+
+.urgent-message p{
+margin-left: 36px;
+}
+
+.messagebody {
+    
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+   
+}
+.sender-image{
+    width: 50px;
+    float: left;
+    margin-top: 50px;
+   
+
+}
+.sender-image img{
+    width: 100%;
+    float: left;
+    border-radius: 50%;
+}
+.mesasge-body{
+    margin-left: 14%;
+    border-radius: 25px;
+    background: #F7F7F7;
+    padding: 20px;
+    height: auto;
+    font-size: 25px;
+    min-width: 500px;
+    min-height: 100px;
+}
+
+.urgentbox-image{
+    background-image: url(/assets/Images/clock.png) !important;
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 22px;
+}
+
+.Full-chat-message.sender-me{
+    position: relative;
+    left: 150px;
+}
+
+.sender-me .mesasge-body{
+    background-color: #D4F4EE;
+  }
+
+
+  .mesasge-body p{
+      font-size: 30px;
+      margin: 0;
+      margin-top: 15px;
+      left: 200px;
+  }
+
+  .add-reaction{
+  float: right;
+  position: relative;
+  left: 330px;
+  margin-top: -25%;
+  }
+
+  .Full-chat-message{
+    
+  }
+
+  .seenby-count{
+    float: right;
+    position: relative;
+    left: 260px;
+    margin-bottom: -5%;
+    margin-top: -3%;
+    color: #BDBDBD;
+  }

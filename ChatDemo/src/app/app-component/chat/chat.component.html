@@ -1,0 +1,38 @@
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+</head>
+
+<div class="messages-header"></div>
+
+<div class="chat-content">
+<div *ngFor="let index of this.AllMessage" class="Full-chat-message" [class.sender-me]="index.isSenderMe">
+  <div class="messagearea" >
+      <div class="urgent-message" *ngIf=index.urgent>
+          <p>Urgent</p>
+        </div>
+      <div class="messagebody" >
+        <div *ngIf="!index.isSenderMe" class="sender-image">
+          <img class="chat-image" src={{index.senderImageUrl}} alt="Avatar">
+        </div>
+          <div class="mesasge-body">
+              <p>{{index.content}}</p>
+          </div>
+          <div *ngIf="!index.isSenderMe" class="add-reaction"><img src="assets/Images/add-reaction.png"></div>
+          <div *ngIf="!index.isSenderMe" class="seenby-count"><p>Seen By {{index.seenByImageUrls.length}}</p></div>
+      </div>
+      
+  </div>
+  <div class="clear-float"></div>
+
+  <div *ngIf=index.isSenderMe>
+      <div class="seenBy-image" *ngFor="let seenBy of index.seenByImageUrls">
+          
+        <img class="chat-image" src={{seenBy}} alt="Avatar">
+      </div>
+  </div>
+  
+</div>
+<div class="clear-float"></div>
+</div>
